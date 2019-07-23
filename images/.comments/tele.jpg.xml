@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>Group of people stargazing</caption>
+  <note>A group of 4 people stargazing in a field. They are using telescopes and are pointing and looking at the sky.
+
+Shot outside using an outdoor lighting rig</note>
+  <place/>
+  <categories>
+    <category value="night"/>
+    <category value="telescope"/>
+    <category value="people"/>
+    <category value="outside"/>
+    <category value="field"/>
+    <category value="stars"/>
+    <category value="clouds"/>
+    <category value="sky"/>
+    <category value="moon"/>
+    <category value="night"/>
+    <category value="tripod"/>
+    <category value="mount"/>
+    <category value="pointing"/>
+    <category value="looking"/>
+    <category value="viewing"/>
+    <category value="astronomy"/>
+    <category value="star-gazing"/>
+    <category value=""/>
+  </categories>
+</comment>

@@ -1,0 +1,163 @@
+/* Styles */
+
+html {
+  font-family: $sans;
+  font-size: 10px;
+}
+
+body {
+  color: $black;
+  font-size: $normal;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
+h2 {
+  font-size: $Biggest;
+}
+
+h3 {
+  font-size: $bigger;
+}
+
+a {
+  display: inline;
+  outline: none;
+
+  &:link {
+    color: $blue;
+  }
+
+  &:visited,
+  &:focus {
+    color: $alt-blue;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+header,
+.secondary-nav {
+  font-size: 1.6rem;
+
+  h1 {
+    color: $black;
+  }
+  
+  a {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $gray;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+.secondary-nav {
+  background: $black;
+  border: 1px solid $gray;
+  //box-shadow: 0 1px 4px $gray;
+
+  a {
+    &.on {
+      color: $white;
+      font-weight: bold;
+    }
+
+    &:link,
+    &:visited {
+      color: $alt-gray;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
+#intro {
+  h2 {
+    font-size: $BIGGEST;
+  }
+}
+
+.news {
+  h2 {
+    color: $alt-blue;
+  }
+
+  .title {
+    font-size: $big;
+
+    a {
+      text-decoration: none;
+
+      &:link,
+      &:visited {
+        color: $gray;
+      }
+    }
+  }
+}
+
+.news-tile {
+  &:hover {
+    background: $alt-white;
+  }
+  .source {
+    font-weight: bold;
+    font-size: $small;
+    color: $blue;
+  }
+
+  .snippet {
+    color: $gray;
+  }
+}
+
+.gallery-nav {
+  color: $white;
+}
+
+.photo-cap {
+  .photo-cap-text {
+    color: $white;
+    font-size: $small;
+  }
+}
+
+.lectures {
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      background: $blue;
+    }
+  }
+}
+
+.lecture-tile {
+  background: $black;
+  color: $white;
+}
+
+footer {
+  background: $black;
+  color: $white;
+}

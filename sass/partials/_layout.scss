@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+header,
+.secondary-nav {
+  padding: 0.4rem 1rem;
+  height: 4.2rem;
+
+  @include valign(center);
+
+  & > * {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin: 0 .4rem;
+    }
+  }
+
+  .nav-image {
+    max-width: 6.4rem;
+    padding: 0 0.4rem;
+    @include valign(center);
+  }
+}
+
+.secondary-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Intro */
+#intro {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  .image {
+  }
+
+  .text {
+    & > * {
+      padding-left: 3rem;
+    }
+  }
+}
+
+.vcenterwrap {
+  @include valign(center);
+}
+
+/* News and Blog tiles */
+.news {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+
+  .title-wrap {
+    margin: 2.4rem;
+    @include valign(center);
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.news-tile {
+  & > * {
+    margin: 1.6rem;
+  }
+}
+
+/* Gallery tile */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  grid-template-rows: repeat(3, 18rem);
+  grid-template-areas:
+      "focus focus focus thumb1 thumb2"
+      "focus focus focus thumb3 thumb4"
+      "focus focus focus thumb5 thumb6";
+
+  .photo {
+    min-height: 100%;
+    min-width: 100%;
+    @include flexalign(center, center);
+  }
+
+  .in-focus {
+    grid-area: focus;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .thumb {
+    cursor: pointer;
+    filter: brightness(50%);
+    overflow: hidden;
+
+    &:hover {
+      filter: unset;
+    }
+  }
+}
+
+.gallery-nav {
+  bottom: 50%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4rem;
+  position: absolute;
+
+  &.gallery-left {
+    left: 2%;
+  }
+
+  &.gallery-right {
+    right: 2%;
+  }
+}
+
+.photo-cap {
+  bottom: 0;
+  background: $black;
+  filter: opacity(75%);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: .6rem;
+
+  &:hover {
+    filter: unset;
+  }
+}
+
+/* Lectures tile */
+.lectures {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  grid-template-rows: repeat(2, 20rem);
+  grid-template-areas:
+      "img img img tile tile"
+      "img img img tile tile";
+
+  #lecture-img {
+    border: 1px solid $alt-gray;
+    grid-area: img;
+    overflow: hidden;
+    @include flexalign(center, center);
+  }
+
+  .lecture-tile {
+    border: 1px solid $gray;
+    display: block;
+
+    @include valign(center);
+    
+    h3,
+    p {
+      text-align: center;
+    }
+  }
+
+  a {
+    span {
+      width: 100%;
+      margin: 0 2rem;
+    }
+  }
+}
+
+.events {
+  display: flex;
+
+  .event-image {
+    flex: 3;
+    max-height: 46rem;
+    overflow: hidden;
+
+    @include flexalign(center, center);
+  }
+
+  .event-desc {
+    flex: 2;
+    position:relative;
+
+    @include valign(center);
+
+    &:hover {
+      background: $alt-white;
+    }
+
+    h3,
+    .event-date {
+      text-align: center;
+    }
+
+    .event-date {
+      color: $gray;
+    }
+
+    .desc-wrapper {
+      margin: 0 3rem;
+      width: 100%;
+
+      & > *{
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  .event-nav {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .event-left {
+    left: 3rem;
+  }
+
+  .event-right {
+    right: 3rem;
+  }
+
+  .event-summary {
+    text-align: justify;
+    text-justify: auto;
+  }
+}
+
+footer {
+  .social {
+    @include valign(center);
+
+    h3 {
+      display: inline-block;
+    }
+
+    ul {
+      display: inline-block;
+      
+      li {
+        display: inline-block;
+        margin-left: 0.6rem;
+      }
+    }
+
+    img {
+      max-width: 2.2rem;
+    }
+  }
+
+  .copyright {
+    a {
+      color: $cyan;
+    }
+  }
+}
+
+#footerwrapper {
+  padding: 2.4rem 3.6rem;
+}
+
+#endmatter {
+  list-style: none;
+
+  & > li {
+    display: inline-block;
+    margin-right: 4%;
+  }
+}
+
+img,
+video {
+  max-width: 100%;
+}

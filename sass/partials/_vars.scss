@@ -1,0 +1,38 @@
+/* Colors!
+ * 'Google Light' terminal theme */
+$white: #FFFFFF;
+$red: #CC342B;
+$green: #198844;
+$yellow: #FBA921;
+$blue: #3870ED;
+$cyan: #A26AC7;
+$magenta: #3870ED;
+$gray: #373B41;
+$black: #1D1F21;
+
+$alt-white: #DDDDDD;
+$alt-gray: #C5C8C6;
+$alt-red: #CC342B;
+$alt-green: #198844;
+$alt-yellow: #FBA921;
+$alt-blue: #3870ED;
+$alt-cyan: #A26AC7;
+$alt-magenta: #3870ED;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.1.1/css/all.css");
+
+$sans: 'Quattrocento Sans', sans-serif;
+$serif: 'Quattrocento', serif;
+
+$smaller: 1.2rem;
+$small: 1.4rem;
+$normal: 1.6rem;
+$big: 1.8rem;
+$bigger: 2.0rem;
+$biggest: 2.4rem;
+$Biggest: 2.8rem;
+$BIGGEST: 3.6rem;
+
+
